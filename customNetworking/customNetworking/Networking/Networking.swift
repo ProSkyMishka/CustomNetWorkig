@@ -12,7 +12,7 @@ protocol NetworkingProtocol {
         (_ result: Result<NetworkingCommandModels.NetworkingResult, Error>) -> Void
     )
     
-    func executeRequest(with request: Request, complition: @escaping NetworkingResult)
+    func executeRequest(with request: Request, completion: @escaping NetworkingResult)
 }
 
 final class Networking: NetworkingProtocol {
@@ -22,7 +22,7 @@ final class Networking: NetworkingProtocol {
         self.baseUrl = baseUrl
     }
     
-    func executeRequest(with request: Request, complition: @escaping NetworkingResult) {
+    func executeRequest(with request: Request, completion: @escaping NetworkingResult) {
         guard let urlRequest = convert(request) else {
             NSLog("wrong url")
             return
@@ -30,9 +30,9 @@ final class Networking: NetworkingProtocol {
         
         let task = URLSession.shared.dataTask(with: urlRequest) { data, response, error in
             if let error = error {
-                complition(.failure(error))
+                completion(.failure(error))
             }
-            complition(.success(NetworkingCommandModels.NetworkingResult(data: data, response: response)))
+            completion(.success(NetworkingCommandModels.NetworkingResult(data: data, response: response)))
         }
         
         task.resume()
