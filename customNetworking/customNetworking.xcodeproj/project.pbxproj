@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2E866BDA2B1A5638004A96B9 /* ToDoWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E866BD92B1A5638004A96B9 /* ToDoWorker.swift */; };
+		2E8903B12B2CBCB40092F10C /* ArticlesWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8903B02B2CBCB40092F10C /* ArticlesWorker.swift */; };
+		2E8903B32B2CBCD20092F10C /* ArticlesEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8903B22B2CBCD20092F10C /* ArticlesEndpoint.swift */; };
+		2E8903B52B2CCE5C0092F10C /* ArticlesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8903B42B2CCE5C0092F10C /* ArticlesModel.swift */; };
 		55D4AFBA2B1A49E2001E958E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D4AFB92B1A49E2001E958E /* AppDelegate.swift */; };
 		55D4AFBC2B1A49E2001E958E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D4AFBB2B1A49E2001E958E /* SceneDelegate.swift */; };
 		55D4AFBE2B1A49E2001E958E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D4AFBD2B1A49E2001E958E /* ViewController.swift */; };
@@ -23,6 +26,9 @@
 
 /* Begin PBXFileReference section */
 		2E866BD92B1A5638004A96B9 /* ToDoWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoWorker.swift; sourceTree = "<group>"; };
+		2E8903B02B2CBCB40092F10C /* ArticlesWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesWorker.swift; sourceTree = "<group>"; };
+		2E8903B22B2CBCD20092F10C /* ArticlesEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesEndpoint.swift; sourceTree = "<group>"; };
+		2E8903B42B2CCE5C0092F10C /* ArticlesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesModel.swift; sourceTree = "<group>"; };
 		55D4AFB62B1A49E2001E958E /* customNetworking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = customNetworking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55D4AFB92B1A49E2001E958E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55D4AFBB2B1A49E2001E958E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +55,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E8903AF2B2CBC820092F10C /* ArticlesWorker */ = {
+			isa = PBXGroup;
+			children = (
+				2E8903B02B2CBCB40092F10C /* ArticlesWorker.swift */,
+				2E8903B42B2CCE5C0092F10C /* ArticlesModel.swift */,
+				2E8903B22B2CBCD20092F10C /* ArticlesEndpoint.swift */,
+			);
+			path = ArticlesWorker;
+			sourceTree = "<group>";
+		};
 		55D4AFAD2B1A49E2001E958E = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +86,7 @@
 			children = (
 				55D4AFCE2B1A4A12001E958E /* Networking */,
 				55D4AFB92B1A49E2001E958E /* AppDelegate.swift */,
+				2E8903AF2B2CBC820092F10C /* ArticlesWorker */,
 				55D4AFBB2B1A49E2001E958E /* SceneDelegate.swift */,
 				55D4AFBD2B1A49E2001E958E /* ViewController.swift */,
 				2E866BD92B1A5638004A96B9 /* ToDoWorker.swift */,
@@ -166,10 +183,13 @@
 			files = (
 				55D4AFBE2B1A49E2001E958E /* ViewController.swift in Sources */,
 				2E866BDA2B1A5638004A96B9 /* ToDoWorker.swift in Sources */,
+				2E8903B52B2CCE5C0092F10C /* ArticlesModel.swift in Sources */,
 				55D4AFD42B1A4B7B001E958E /* Request.swift in Sources */,
 				55D4AFBA2B1A49E2001E958E /* AppDelegate.swift in Sources */,
+				2E8903B12B2CBCB40092F10C /* ArticlesWorker.swift in Sources */,
 				55D4AFD82B1A4DF2001E958E /* NetworkingCommandModels.swift in Sources */,
 				55D4AFD02B1A4A39001E958E /* Aliases.swift in Sources */,
+				2E8903B32B2CBCD20092F10C /* ArticlesEndpoint.swift in Sources */,
 				55D4AFBC2B1A49E2001E958E /* SceneDelegate.swift in Sources */,
 				55D4AFD22B1A4AD3001E958E /* Endpoint.swift in Sources */,
 				55D4AFD62B1A4DDA001E958E /* Networking.swift in Sources */,

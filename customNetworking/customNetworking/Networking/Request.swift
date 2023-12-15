@@ -24,7 +24,7 @@ struct Request {
     
     init(
         endpoint: Endpoint,
-        method: Request.RequestMethod,
+        method: Request.RequestMethod = .get,
         parameters: RequestParameters? = nil,
         body: Data? = nil
     ) {

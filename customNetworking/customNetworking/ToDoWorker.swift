@@ -9,7 +9,7 @@ import Foundation
 
 enum ToDoEndpoint: Endpoint {
     case toDo(Int)
-    
+
     var compositePath: String {
         switch self {
             
